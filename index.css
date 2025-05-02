@@ -1,0 +1,186 @@
+body {
+    background-color: #000000 !important;
+}
+#mynavbar {  
+  background-color: black;
+  border-radius: 5px;
+}
+
+#mynavbar li a {  
+  color: whitesmoke; 
+}
+
+#mynavbar li a:hover {
+  background-color: whitesmoke;   
+  color: red;        
+}
+.img1{
+  width:100%;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 15%;
+  
+}
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+footer{
+    text-align: center;
+    
+}
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #112fc9}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: white;
+  color:red;
+}
+
+.carousel-inner {
+  aspect-ratio: 16 / 9; 
+  
+  background-color: black;   
+}
+
+.carousel-inner .carousel-item img{
+  height: 100%;
+  width:100%;
+
+  object-fit:contain;
+  display: block;
+}
+
+header {
+  text-align: center;
+  background-image: url("gpt.png");
+  min-height: 600px;
+  background-color: rgb(232, 232, 232);
+  display: flexbox;
+  
+}
+
+/* Section dividers with images (add background-image and min-height */
+#bgstrip1 {
+  background-image: url("MV5BYzAzYjU0ZDItMmZmNi00YzI3LWI0MTgtMDVhMzkwNTRkOTYxXkEyXkFqcGdeQWFybm8@._V1_.jpg");
+  min-height: 400px;
+}
+
+#bgstrip2 {
+  background-image: url("AS_RAM_710_FearNoMort-9-H-2024.webp");
+  min-height: 400px;
+}
+
+/* Style the main content sections (colors, text-align, padding) */
+main, section {
+    
+    background-color: rgb(0, 0, 0);
+    color:white;
+    text-align: center;
+    padding:0px;
+    margin:0px;
+    
+}
+
+/* Style the footer  (colors, text-align, padding) */
+footer {
+  background-color: rgb(182, 17, 17);
+  color: whitesmoke;
+  text-align: center;
+}
+
+
+/* This class will give a background image a parallax scrolling effect where the image is fixed and the rest of the page scrolls over it. Based on https://www.w3schools.com/howto/howto_css_parallax.asp
+*/
+.parallax_image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Fancy Table based on https://www.w3schools.com/css/tryit.asp?filename=trycss_table_fancy 
+ Usage: <table class="fancy-table">
+*/
+.fancy-table {
+    border-collapse: collapse;
+    width: 500px;
+    
+}
+
+
+
+/* Table data rule .fancy-table td 
+ Add a color, background-color, border, padding, text-align */
+.fancy-table td {
+ border: 3px solid;
+ text-align: center;
+}
+
+.movie-row {
+  display: flex;
+  gap: 20px; /* space between the cards */
+  overflow-x: auto; /* horizontal scroll if needed */
+  padding: 20px;
+}
+
+.movie-card img {
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.movie-card img:hover {
+  transform: scale(1.05);
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen height */
+  }
